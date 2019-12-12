@@ -3,6 +3,8 @@ Author Name
 :idprefix:
 :idseparator: -
 :!example-caption:
+:page-description: Your custom page description goes here
+:page-social-share-image: https://downloads.lightbend.com/website/social/lightbend-logo-orange-twitter.jpg
 :toc:
 :toc-title: ON THIS PAGE
 :toclevels: 2
