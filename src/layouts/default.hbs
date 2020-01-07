@@ -17,9 +17,9 @@
 	<meta name="generator" content="Antora {{or antoraVersion site.antoraVersion}}">
 	{{/if}}
 
-	{{#if page.canonicalUrl}}
-	<link rel="canonical" href="{{page.canonicalUrl}}">
-	<meta property="og:url" content="{{page.canonicalUrl}}" />
+	{{#if (or page.canonicalUrl page.attributes.canonicalUrl)}}
+	<link rel="canonical" href="{{or page.canonicalUrl page.attributes.canonicalUrl}}">
+	<meta property="og:url" content="{{or page.canonicalUrl page.attributes.canonicalUrl}}" />
 	{{/if}}
 
 	{{#if page.keywords}}
