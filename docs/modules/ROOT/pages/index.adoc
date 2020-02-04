@@ -1,4 +1,4 @@
-= Antora Default UI
+= Lightbend Default UI
 // Settings:
 :idprefix:
 :idseparator: -
@@ -18,7 +18,7 @@
 :uri-git: https://git-scm.com
 :uri-git-dl: {uri-git}/downloads
 
-This project produces the {uri-preview}[default UI bundle] for documentation sites generated with {uri-antora}[Antora].
+This project produces the {uri-preview}[default UI bundle] for Lightbend documentation sites generated with {uri-antora}[Antora].
 It contains the UI assets (page templates, CSS, JavaScript, images, etc.) and a Gulp build script.
 The build can be used to preview the UI locally (featuring live updates), or to package it for consumption by the Antora site generator.
 
@@ -30,6 +30,22 @@ After reading it, you'll be able to:
 * [x] Launch a preview server to visually inspect the UI.
 * [x] Adopt a development workflow to share and accept changes to the UI.
 * [x] Package a UI for your documentation site that Antora can use.
+
+It also explains modifications made to support Lightbend-specific use cases.
+
+== Lightbend specific modifications
+
+This section describes modifications that you must add settings to your project to use.
+
+=== Console in-app help
+
+Lightbend commercial products include Console, a browser-based application for observing applications built with Lightbend Technology. Console includes in-app help displayed in an iframe. Console also has a complete documentation set, published on https://developer.lightbend.com/docs. To create both the help and the doc from a single source, this UI has been modified to generate plain HTML pages without a toolbar or TOC. 
+
+To generate plain HTML, you will need an extra site.yml file. For example, you could name it no-toc-site.yml. In its attributes section, include the following:
+`page-layout: no-toc-default`
+
+This attribute causes antora to use a page layout without toolbar or TOC.
+
 
 == File type and technology overview
 
