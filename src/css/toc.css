@@ -5,6 +5,9 @@
   	position: relative;
   	padding: 0;
 }
+#toc {
+	font-size: .938rem;
+}
 @media screen and (min-width: 1280px) {
 	.toc {
 		flex-grow: 1;
@@ -23,6 +26,9 @@
 		position: sticky;
 		top: 150px;
 		margin-top: 0;
+	}
+	.docs-only .toc-menu.stick{
+		top: 20px;
 	}
 	#toc {
 		display: none;
