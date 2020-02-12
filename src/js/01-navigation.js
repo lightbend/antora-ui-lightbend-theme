@@ -2,6 +2,7 @@
   'use strict'
 
   var navContainer = document.querySelector('.navigation-container')
+  if (!navContainer) return
   var navToggle = document.querySelector('.navigation-toggle')
 
   navToggle.addEventListener('click', toggleNavigation)
