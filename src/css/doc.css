@@ -1,3 +1,4 @@
+
 .doc {
   margin: 0 .5rem;
   padding: 0 1rem 4rem;
@@ -6,6 +7,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  body.simple .doc {
+    margin: 0 1rem 0 0;
+    max-width: 50rem
+  }
   .doc {
     margin: 0 1rem;
   }
@@ -17,6 +22,7 @@
     max-width: 50rem;
     flex-grow: 1;
     flex-basis: 0;
+    padding: 0 1rem 8rem;
   }
 }
 

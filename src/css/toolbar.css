@@ -1,6 +1,10 @@
 :root {
   --toolbar-height: 2.5rem;
 }
+body.simple .toolbar {
+  opacity: 0;
+  height: 0;
+}
 
 .toolbar {
   color: #5d5d5d;
@@ -41,6 +45,12 @@
 @media screen and (min-width: 1024px) {
   .navigation-toggle {
     display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body.simple .toolbar {
+    opacity: 0;
+    height: var(--toolbar-height);
   }
 }
 
