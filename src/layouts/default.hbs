@@ -22,6 +22,10 @@
 	<meta property="og:url" content="{{or page.canonicalUrl page.attributes.canonicalUrl}}" />
 	{{/if}}
 
+	{{#if page.attributes.robots}}
+	<meta name="robots" content="{{page.attributes.robots}}">
+	{{/if}}
+
 	{{#if page.keywords}}
 	<meta name="keywords" content="{{page.keywords}}">
 	{{/if}}
@@ -43,7 +47,7 @@
 
 {{> head-scripts}}
   </head>
-  <body class="article">
+  <body class="article {{page.attributes.type}}">
 {{> header}}
 {{> main}}
 {{> footer}}
