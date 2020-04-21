@@ -38,7 +38,7 @@ module.exports = (src, dest, preview) => () => {
     ]),
     postcssVar({ preserve: preview ? 'preserve-computed' : false }),
     postcssCalc(),
-    autoprefixer({ browsers: ['last 2 versions'] }),
+    autoprefixer({ overrideBrowserslist: ['defaults'] }),
     preview ? () => {} : cssnano({ preset: 'default' }),
   ]
 
@@ -66,7 +66,7 @@ module.exports = (src, dest, preview) => () => {
       .pipe(
         imagemin([
           imagemin.gifsicle(),
-          imagemin.jpegtran(),
+          imagemin.mozjpeg(),
           imagemin.optipng(),
           imagemin.svgo({ plugins: [{ removeViewBox: false }] }),
         ])
