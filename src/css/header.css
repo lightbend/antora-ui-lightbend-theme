@@ -350,6 +350,14 @@ body {
   font-weight: 700;
   line-height: 1;
 }
+body.lightbend-cloudstate .header-logo {
+  height: 46px;
+}
+body.lightbend-cloudstate .site-id {
+  left: 140px;
+  bottom: 16px;
+}
+
 
 a.site-id:hover {
   color: white;
