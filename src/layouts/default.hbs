@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
 {{> head}}
-{{> head-scripts}}
+{{> head-scripts-lightbend}}
   </head>
   <body class="article {{page.attributes.type}}">
 {{> header theme="lightbend" url="https://developer.lightbend.com/docs/" site-id-url="https://developer.lightbend.com/docs/"}}
 {{> main}}
-{{> footer}}
+{{> footer-content}}
+{{> footer-scripts-global}}
+{{> footer-scripts-lightbend}}
   </body>
 </html>
