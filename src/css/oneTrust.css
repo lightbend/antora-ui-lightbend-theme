@@ -1,7 +1,7 @@
 body .optanon-alert-box-wrapper {
     background: rgba(0,0,0,0.9);
     bottom: 0 !important;
-    min-height: 200px;
+    min-height: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-box;
@@ -20,6 +20,11 @@ body .optanon-alert-box-wrapper {
     -ms-box-align: center;
     -webkit-align-items: center;
     align-items: center
+}
+@media screen and (min-width: 600px) {
+    body .optanon-alert-box-wrapper {
+        min-height: 200px
+    }
 }
 
 body .optanon-alert-box-wrapper .optanon-alert-box-bottom-top {
@@ -101,7 +106,9 @@ body .optanon-alert-box-wrapper .optanon-alert-box-bg .optanon-alert-box-button-
 body .optanon-alert-box-wrapper .optanon-alert-box-bg .optanon-alert-box-button-container .optanon-button-more .cookie-settings-button {
     text-decoration: underline
 }
-
+body .optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle {
+    padding: 10px 10px 0 16px;
+}
 body .optanon-alert-box-wrapper .optanon-alert-box-bg .optanon-alert-box-button-container .optanon-button-more .cookie-settings-button:focus {
     outline: none
 }

@@ -2,17 +2,16 @@
 <html lang="en">
   <head>
 {{> head-global}}
-    <meta name="robots" content="noindex nofollow">
-
+    <meta name="robots" content="noindex, nofollow">
   </head>
   <body class="article {{page.attributes.type}} lightbend-cloudstate">
-{{> cs-header theme="lightbend-cloudstate" url="https://www.lightbend.com/cloudstate-by-lightbend" site-id-url="https://developer.lightbend.com/docs/"}}
+{{> header-lightbend-cloudstate theme="lightbend-cloudstate" url="https://www.lightbend.com/cloudstate-by-lightbend" site-id-url="https://developer.lightbend.com/docs/"}}
 {{> main}}
 <footer class="footer">
 	{{> footer-nav}}
 	{{> footer-legal-lightbend-cloudstate}}
 </footer>
-{{> footer-scripts-global}}
+{{> footer-scripts-global-private}}
 {{> footer-scripts-youtube-embed-private}}
   </body>
 </html>

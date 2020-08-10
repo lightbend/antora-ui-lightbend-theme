@@ -3,7 +3,7 @@
 	(function($) {
 		$(function() {
 			var ytID;
-			//find each YouTube embed and only load if cookies have been approved
+			//find each YouTube embed and load video iframe
 			$( "a.yt-widget" ).each(function( index ) {
 				var anchor = $(this);
 				var ytURL = $(this).attr("href");
