@@ -6,11 +6,13 @@
     <title>{{detag (or page.title 'Page Not Found')}}{{#if site.title}} :: {{site.title}}{{/if}}</title>
     <link rel="stylesheet" href="{{uiRootPath}}/css/site.css?v-01">
 	<link rel="shortcut icon" href="{{uiRootPath}}/img/favicons/favicon.ico" />
-{{> head-scripts}}
+{{> head-scripts-lightbend}}
   </head>
   <body class="status-404">
 {{> header theme="lightbend" url="https://developer.lightbend.com/docs/"}}
 {{> main}}
-{{> footer}}
+{{> footer-content}}
+{{> footer-scripts-global}}
+{{> footer-scripts-lightbend}}
   </body>
 </html>

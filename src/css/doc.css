@@ -24,6 +24,14 @@
     flex-basis: 0;
     padding: 0 1rem 8rem;
   }
+  .cookie {
+    padding-left: 18rem;
+    max-width: 70rem;
+    
+  }
+  .cookie h2 {
+    border-bottom: none !important;
+  } 
 }
 
 .doc h1,
@@ -79,11 +87,11 @@
 
 .doc a,
 .doc a:visited {
-  color: var(--color-lb-orange);
+  color: var(--color-lb-blue);
 }
 
 .doc a:hover {
-  color: var(--color-lb-orange-dkr);
+  color: var(--color-lb-blue-dkr);
 }
 
 .doc i.fa {
@@ -664,6 +672,15 @@ kbd,
   border-bottom: 1px solid var(--color-lb-off-white);
   z-index: 1;
 }
+.doc dl.tabbed dt a,
+.doc dl.tabbed dt a:visited {
+  color: var(--color-lb-slate-ltr)
+}
+.doc dl.tabbed dt.current a,
+.doc dl.tabbed dt.current a:visited {
+  color: var(--color-lb-orange)
+}
+
 .doc dl.tabbed dt.first{
   border-radius: 3px 0 0 0;
 }
