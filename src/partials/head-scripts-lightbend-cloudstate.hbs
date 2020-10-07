@@ -1,7 +1,9 @@
 <!--Head Scripts Lightbend Cloudstate-->
 <script>
   var head = document.getElementsByTagName('head')[0];
-  if (!window.location.href.startsWith("file://")) {
+  var url = window.location.href;
+  if ((!url.startsWith("file://")) &&
+      (!url.startsWith("http://localhost"))) {
     var script = document.createElement('script');
 
     script.type = 'text/javascript';
