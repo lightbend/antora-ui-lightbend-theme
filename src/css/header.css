@@ -334,7 +334,7 @@ body {
 
 .navbar-brand .navbar-item:first-child {
   padding-left: .9375rem;
-  padding-right: .9375rem; 
+  padding-right: .9375rem;
 }
 
 .header-logo {
@@ -351,11 +351,11 @@ body {
   line-height: 1;
 }
 body.lightbend-cloudstate .header-logo {
-  height: 46px;
+  height: 64px;
 }
 body.lightbend-cloudstate .site-id {
-  left: 140px;
-  bottom: 16px;
+  left: 176px;
+  bottom: 15px;
 }
 
 
