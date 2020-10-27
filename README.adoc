@@ -20,6 +20,11 @@
 
 image:https://travis-ci.com/lightbend/antora-ui-lightbend-theme.svg?branch=master["Build Status", link="https://travis-ci.com/lightbend/antora-ui-lightbend-theme"]
 
+NOTE
+This repo is no longer under development, we are currently transitioning to the following Lightbend Antora Theme here: https://github.com/lightbend/antora-supplemental-ui-lightbend-theme
+
+
+
 This repo contains a zipped Antora UI component that is styled to use with Antora to build documentation for Lightbend's commercial products. You can see a preview of the default UI at {url-preview}.The most common use is to simply refer to this zipped bundle. However, you can also make changes to the UI by modifiying the source files in this repo.  demonstrates how to produce a UI bundle for use in a documentation site generated with {url-antora}[Antora].
 
 To understand the structure and behavior of the UI, see ./docs/modules/ROOT/pages/index.adoc.
